@@ -1,0 +1,27 @@
+PODS:
+  - MBProgressHUD (0.9)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core (= 3.7.1)
+  - SDWebImage/Core (3.7.1)
+  - TesseractOCRiOS (3.4.0)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 0.9)
+  - SDWebImage (~> 3.7)
+  - TesseractOCRiOS (from `https://github.com/gali8/Tesseract-OCR-iOS.git`)
+
+EXTERNAL SOURCES:
+  TesseractOCRiOS:
+    :git: https://github.com/gali8/Tesseract-OCR-iOS.git
+
+CHECKOUT OPTIONS:
+  TesseractOCRiOS:
+    :commit: ae3db31c279f84c7f3855c61cb0cf58fb7eb6f11
+    :git: https://github.com/gali8/Tesseract-OCR-iOS.git
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  TesseractOCRiOS: a810f2c701121ff5a6019be5a9e2441cce5f7906
+
+COCOAPODS: 0.35.0

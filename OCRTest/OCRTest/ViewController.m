@@ -17,7 +17,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    G8Tesseract* tesseract = [[G8Tesseract alloc] initWithLanguage:@"eng+ita"];
+    tesseract.delegate = self;
+    
+    [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"]; //limit search
+    [tesseract setImage:[UIImage imageNamed:@"image_sample.jpg"]]; //image to check
+    [tesseract recognize];
+    
+    NSLog(@"---- >  %@", [tesseract recognizedText]);
+    
+    tesseract = nil;
 }
+
+
+- (BOOL)shouldCancelImageRecognitionForTesseract:(G8Tesseract*)tesseract
+{
+    NSLog(@"progress: %d", tesseract.progress);
+    return NO;  // return YES, if you need to interrupt tesseract before it finishes
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
