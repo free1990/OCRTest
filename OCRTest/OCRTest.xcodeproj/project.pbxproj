@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BB32BB6DC29FE6B215870D85 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9BE94F18105AB35E5AAFA4 /* libPods.a */; };
+		CF5C0AA41A42F862005F322F /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = CF5C0AA31A42F862005F322F /* tessdata */; };
+		CF5C0AC11A4308C7005F322F /* text.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF5C0AC01A4308C7005F322F /* text.jpg */; };
+		CF5C0AC31A4309A4005F322F /* num.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF5C0AC21A4309A4005F322F /* num.jpg */; };
+		CF5C0AC51A430CBD005F322F /* abc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF5C0AC41A430CBD005F322F /* abc.jpg */; };
 		D63ADF7B1A42A709009CA874 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D63ADF7A1A42A709009CA874 /* main.m */; };
 		D63ADF7E1A42A709009CA874 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D63ADF7D1A42A709009CA874 /* AppDelegate.m */; };
 		D63ADF811A42A709009CA874 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63ADF801A42A709009CA874 /* ViewController.m */; };
@@ -32,6 +36,10 @@
 		331883D188F5DD896B61CA15 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4A9BE94F18105AB35E5AAFA4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4906C277FF4F7F67352B7E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CF5C0AA31A42F862005F322F /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		CF5C0AC01A4308C7005F322F /* text.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = text.jpg; sourceTree = "<group>"; };
+		CF5C0AC21A4309A4005F322F /* num.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = num.jpg; sourceTree = "<group>"; };
+		CF5C0AC41A430CBD005F322F /* abc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abc.jpg; sourceTree = "<group>"; };
 		D63ADF751A42A709009CA874 /* OCRTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCRTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63ADF791A42A709009CA874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D63ADF7A1A42A709009CA874 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,7 +107,11 @@
 		D63ADF771A42A709009CA874 /* OCRTest */ = {
 			isa = PBXGroup;
 			children = (
+				CF5C0AA31A42F862005F322F /* tessdata */,
 				D640BA2E1A42CE6A0043C861 /* image_sample.jpg */,
+				CF5C0AC01A4308C7005F322F /* text.jpg */,
+				CF5C0AC21A4309A4005F322F /* num.jpg */,
+				CF5C0AC41A430CBD005F322F /* abc.jpg */,
 				D63ADF7C1A42A709009CA874 /* AppDelegate.h */,
 				D63ADF7D1A42A709009CA874 /* AppDelegate.m */,
 				D63ADF7F1A42A709009CA874 /* ViewController.h */,
@@ -229,8 +241,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D63ADF841A42A709009CA874 /* Main.storyboard in Resources */,
+				CF5C0AC31A4309A4005F322F /* num.jpg in Resources */,
 				D63ADF891A42A709009CA874 /* LaunchScreen.xib in Resources */,
+				CF5C0AA41A42F862005F322F /* tessdata in Resources */,
+				CF5C0AC51A430CBD005F322F /* abc.jpg in Resources */,
 				D63ADF861A42A709009CA874 /* Images.xcassets in Resources */,
+				CF5C0AC11A4308C7005F322F /* text.jpg in Resources */,
 				D640BA2F1A42CE6A0043C861 /* image_sample.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
