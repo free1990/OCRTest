@@ -19,14 +19,17 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     
-    G8Tesseract* tesseract = [[G8Tesseract alloc] initWithLanguage:@"eng+ita"];
+//    G8Tesseract* tesseract = [[G8Tesseract alloc] initWithLanguage:@"eng+ita"];
+//    tesseract.delegate = self;
+//    [tesseract setVariableValue:@"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+//                         forKey:kG8ParamTesseditCharWhitelist]; //limit search
+//    [tesseract setImage:[UIImage imageNamed:@"image_sample.jpg"]];
+    
+    
+    G8Tesseract* tesseract = [[G8Tesseract alloc] initWithLanguage:@"chi_sim"];
     tesseract.delegate = self;
     
-    [tesseract setVariableValue:@"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                         forKey:kG8ParamTesseditCharWhitelist]; //limit search
-    
-    [tesseract setImage:[UIImage imageNamed:@"image_sample.jpg"]];
-//    [tesseract setImage:[UIImage imageNamed:@"abc.jpg"]];
+    [tesseract setImage:[UIImage imageNamed:@"text.jpg"]];
     
     //image to check
     [tesseract recognize];
